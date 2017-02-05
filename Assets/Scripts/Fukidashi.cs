@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Fukidashi : MonoBehaviour
 {
-	// Use this for initialization
-	void Start () {
-	
+	public Canvas Canvas;
+	public Text Text;
+
+	public void StartMessage(string Message) {
+		Canvas.enabled = true;
+		Text.text = Message;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }
