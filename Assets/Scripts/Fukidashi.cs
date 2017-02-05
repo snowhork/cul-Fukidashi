@@ -17,6 +17,8 @@ public class Fukidashi : MonoBehaviour
 			Text.text = Message.Substring (0, i + 1);
 			yield return new WaitForSeconds (0.1f);
 		}
+		yield return new WaitForSeconds (1f);
+		Canvas.enabled = false;
 	}
 
 }
