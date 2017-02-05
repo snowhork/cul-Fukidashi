@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RayController : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
 
 	void Update ()
 	{
