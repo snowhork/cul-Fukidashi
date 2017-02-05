@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Fukidashi : MonoBehaviour {
-
+public class Fukidashi : MonoBehaviour
+{
 	// Use this for initialization
 	void Start () {
 	
