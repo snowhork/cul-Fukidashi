@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour {
 	void RayCast() {
 		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hit;
-		if (Physics.Raycast(transform.position, transform.forward, out hit))
+		if (Physics.Raycast(ray, out hit))
 		{
 			var character = hit.collider.gameObject.GetComponent<Character>();
 			if (character == null)
