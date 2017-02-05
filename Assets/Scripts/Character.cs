@@ -2,9 +2,9 @@
 using System.Collections;
 
 public class Character : MonoBehaviour {
-
+	public Fukidashi fukidashi;
     public void StartConversation()
     {
-        print("Hello, World");
+		fukidashi.StartMessage ("Hello, World");
     }
 }
