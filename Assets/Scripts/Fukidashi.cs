@@ -9,7 +9,14 @@ public class Fukidashi : MonoBehaviour
 
 	public void StartMessage(string Message) {
 		Canvas.enabled = true;
-		Text.text = Message;
+		StartCoroutine (FlowMessage (Message));
+	}
+
+	IEnumerator FlowMessage(string Message) {
+		for (int i = 0; i < Message.Length; i++) {
+			Text.text = Message.Substring (0, i + 1);
+			yield return new WaitForSeconds (0.1f);
+		}
 	}
 
 }
