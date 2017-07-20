@@ -136,4 +136,23 @@ public sealed class Unity_BatchBuild : EditorWindow {
 		}
 		return scenes.ToArray();
 	}
+
+	private static bool BatchBuildAndroid()
+	{
+		// 引数取得
+		string[] args = System.Environment.GetCommandLineArgs();
+
+		int i, len = args.Length;
+		if (args.Length == 0)
+			return false;
+		switch (args [0]) {
+		case "release":
+			return BuildAndroid (true);
+			break;
+		case "debug":
+			return BuildAndroid (false);	
+			break;
+		}
+		return false;
+	}
 }
